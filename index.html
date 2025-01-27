@@ -17,6 +17,8 @@
         ></a-asset-item>
         <!-- PONT -->
         <a-asset-item id="pont" src="./assets/bridge.glb"></a-asset-item>
+         <!-- CIEL -->
+         <a-asset-item id="ciel" src="./assets/image copy 3.png"></a-asset-item>
         <!-- ARBRE1 -->
         <a-asset-item id="arbre1" src="./assets/Tree.glb"></a-asset-item>
         <!-- ARBRE2 -->
@@ -27,8 +29,6 @@
         <a-asset-item id="arbre4" src="./assets/Tree.glb"></a-asset-item>
         <!-- ARCHE -->
         <a-asset-item id="arche" src="./assets/Torii Gate.glb"></a-asset-item>
-        <!-- HERBE -->
-        <a-asset-item id="herbe" src="./assets/Grass Patch.glb.glb"></a-asset-item>
         <!-- BANC -->
         <a-asset-item id="banc" src="./assets/Bench.glb"></a-asset-item>
         <!-- ROCHER -->
@@ -39,7 +39,7 @@
 
      
 
-      <!-- EAU DROITE-->
+      <!-- EAU DROITE -->
       <a-sphere
         width="50"
         scale="10 5 0.5"
@@ -50,7 +50,7 @@
         animation__texture="property: material.offset; to: 1 1; dur: 50000; loop: true; easing: linear;"
       ></a-sphere>
 
-      <!-- EAU GAUCHE-->
+      <!-- EAU GAUCHE -->
       <a-sphere
         width="50"
         scale="10 5 0.5"
@@ -95,6 +95,22 @@
       gltf-model="#rocher"
       ></a-entity>
 
+      <a-entity
+      position="18.284 -0.549 -1.648"
+      scale="1 1 0.5"
+      rotation="0 120 0"
+      gltf-model="#rocher"
+      ></a-entity>
+
+      <a-entity
+      position="14.850 -0.549 -4.590"
+      scale="1 1 0.2"
+      rotation="0 160 0"
+      gltf-model="#rocher"
+      ></a-entity>
+
+
+
       <!-- PERSO -->
       <a-entity
         position="7 2.467 -6.471"
@@ -121,7 +137,7 @@
 
       <!-- PAGODE -->
       <a-entity
-        position="0.995 0.849 -12.732"
+        position="0.995 0.408 -12.732"
         scale="0.7 0.5 0.3"
         rotation="0 0 0"
         gltf-model="#pagode"
@@ -192,7 +208,11 @@
      
 
       <!-- CIEL -->
-      <a-sky color="#FFD2EA"></a-sky>
+      <a-sky 
+      src="#ciel" 
+      color="#FFD2EA">
+    </a-sky>
+  
     </a-scene>
   </body>
 </html>
