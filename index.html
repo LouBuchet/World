@@ -37,8 +37,27 @@
         <a-asset-item id="rocher" src="./assets/Rocks.glb"></a-asset-item>
         <!-- PAGODE -->
         <a-asset-item id="pagode" src="./assets/Pagoda.glb"></a-asset-item>
-        <a-asset-item id="herbesol" src="./assets/patch_of_grass.glb"></a-asset-item>
+        <!-- SON -->
+        <audio
+          id="sound"
+          src="./assets/Joe Hisaishi - One Summers Day.mp3"
+        ></audio>
+        <!-- HERBE -->
+        <a-asset-item  id="herbesol" src="./assets/patch_of_grass.glb" ><a-asset-item>
+          <!-- HERBE -->
+        <a-asset-item  id="herbe" src="./assets/grass.glb" ><a-asset-item>
+        <!-- CHEMIN -->
+        <a-asset-item id="chemin" src="./assets/Path.glb"></a-asset-item>
       </a-asset>
+
+    
+
+      <!--TUNNEL-->
+      <!-- <a-entity
+        position="-5.319 -0.583 4.265"
+        scale="1 1 0.5"
+        gltf-model="#tunnel"
+      ></a-entity> -->
 
       <!-- EAU DROITE -->
       <a-sphere
@@ -61,6 +80,20 @@
         material="shader: standard; color: #FFFFFF; src: url(./assets/image.png)"
         animation__texture="property: material.offset; to: 1 1; dur: 50000; loop: true; easing: linear;"
       ></a-sphere>
+
+ <!--CHEMIN-->
+      <a-entity
+      position="0.945 0.797 8.174"
+      scale="2.5 1 2"
+      gltf-model="#chemin"
+    ></a-entity>
+
+    <a-entity
+    position="0.945 0.797 12.1"
+    scale="2.5 1 2"
+    gltf-model="#chemin"
+  ></a-entity>
+
 
       <!--ROCHERS GAUCHE-->
       <a-entity
@@ -166,6 +199,138 @@
         gltf-model="#rocher"
       ></a-entity>
 
+<!-- HERBE -->
+      <a-entity
+      position="-4.822 0.795 6.143"
+      scale="2 2 2"
+      rotation="0 -45 0"
+      gltf-model="#herbe"
+    >
+    </a-entity>
+
+    <a-entity
+      position="-4.822 0.795 8"
+      scale="2 2 2"
+      rotation="0 -45 0"
+      gltf-model="#herbe"
+    >
+    </a-entity>
+
+    <a-entity
+    position="-4.822 0.795 10"
+    scale="2 2 2"
+    rotation="0 -45 0"
+    gltf-model="#herbe"
+  >
+  </a-entity>
+
+  <a-entity
+  position="-8 0.795 6"
+  scale="2 2 2"
+  rotation="0 -45 0"
+  gltf-model="#herbe"
+>
+</a-entity>
+
+<a-entity
+position="-12 0.795 6"
+scale="2 2 2"
+rotation="0 -45 0"
+gltf-model="#herbe"
+>
+</a-entity>
+
+<a-entity
+position="-15 0.795 6"
+scale="2 2 2"
+rotation="0 -45 0"
+gltf-model="#herbe"
+>
+</a-entity>
+
+<a-entity
+    position="-8 0.795 10"
+    scale="2 2 2"
+    rotation="0 -45 0"
+    gltf-model="#herbe"
+  >
+  </a-entity>
+
+<a-entity
+    position="-12 0.795 10"
+    scale="2 2 2"
+    rotation="0 -45 0"
+    gltf-model="#herbe"
+  >
+  </a-entity>
+
+  <a-entity
+    position="-15 0.795 10"
+    scale="2 2 2"
+    rotation="0 -45 0"
+    gltf-model="#herbe"
+  >
+  </a-entity>
+
+  <a-entity
+  position="-18 0.795 10"
+  scale="2 2 2"
+  rotation="0 -45 0"
+  gltf-model="#herbe"
+>
+</a-entity>
+
+<a-entity
+  position="-21 0.795 10"
+  scale="2 2 2"
+  rotation="0 -45 0"
+  gltf-model="#herbe"
+>
+</a-entity>
+
+<a-entity
+  position="-22.5 0.795 10"
+  scale="2 2 2"
+  rotation="0 -45 0"
+  gltf-model="#herbe"
+>
+</a-entity>
+
+<a-entity
+  position="-19 0.795 6"
+  scale="2 2 2"
+  rotation="0 -45 0"
+  gltf-model="#herbe"
+>
+</a-entity>
+
+<a-entity
+  position="-22.5 0.795 6"
+  scale="2 2 2"
+  rotation="0 -45 0"
+  gltf-model="#herbe"
+>
+</a-entity>
+
+
+<a-entity
+  position="-22.5 0.795 8"
+  scale="2 2 2"
+  rotation="0 -45 0"
+  gltf-model="#herbe"
+>
+</a-entity>
+
+
+<a-entity
+  position="-15 0.795 8"
+  scale="2 2 2"
+  rotation="0 -45 0"
+  gltf-model="#herbe"
+>
+</a-entity>
+
+
       <!-- PERSO -->
       <a-entity
         position="7 2.467 -6.471"
@@ -243,19 +408,21 @@
       >
       </a-entity>
 
+      
+
       <!-- HERBE GAUCHE-->
-      <a-entity position="-3.413 0.795 6.232" gltf-model="#herbe"> </a-entity>
+      <!-- <a-entity position="-3.413 0.795 6.232" gltf-model="#herbe"> </a-entity>
 
       <a-entity position="-5 0.795 6.232" gltf-model="#herbe"> </a-entity>
 
       <a-entity position="-7 0.795 5.626" gltf-model="#herbe"> </a-entity>
 
-      <a-entity position="-9 0.795 5" gltf-model="#herbe"> </a-entity>
+      <a-entity position="-9 0.795 5" gltf-model="#herbe"> </a-entity> -->
 
       <!-- HERBE DROITE-->
 
       <!-- SOL -->
-<!-- <a-entity
+      <!-- <a-entity
 position="0 0 0"
 scale="1 1 1"
 gltf-model="#herbesol"
@@ -283,6 +450,17 @@ geometry="primitive: box; width: 50; height: 40; depth: 1"
         laser-controls="hand: right"
         raycaster="objects: .clickable; far: 10; showLine: true"
       ></a-entity>
+
+      <!-- SON -->
+      <a-sound src="#sound" autoplay="true" position="0 2 -5" loop="true" startTime="45"></a-sound>
+
+      <!-- <script>
+  let audio = document.querySelector("#music").components.sound.pool[0].source;
+  audio.oncanplaythrough = () => {
+    audio.currentTime = 45; // Démarre à 45 secondes
+    audio.play();
+  };
+</script> -->
     </a-scene>
   </body>
 </html>
